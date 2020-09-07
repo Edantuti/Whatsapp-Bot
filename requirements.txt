@@ -1,0 +1,4 @@
+python==3.8
+twilio==6.45.1
+pyngrok==4.1.10
+Flask==1.1.2
