@@ -1,2 +1,6 @@
 twilio==6.45.1
 Flask==1.1.2
+random==1.0.1
+requests==2.24.0
+datetime==4.3
+pytz==2020.1

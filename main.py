@@ -1,14 +1,10 @@
 from flask import Flask, request
-import os
 from bible import Bible
 from checkTime import checkTime
 from twilio.twiml.messaging_response import MessagingResponse
-from keep_alive import keep_alive
-from twilio.rest import Client
 
 b = Bible()
 
-client = Client(os.environ.get("SID"), os.environ.get("TOKEN")) 
 verse = ""
 verse = b.verse_gen()
 day=4
@@ -37,5 +33,4 @@ def bot():
 
 
 if __name__ == "__main__":
-  keep_alive()
   app.run()
