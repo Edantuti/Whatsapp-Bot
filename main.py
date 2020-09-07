@@ -10,7 +10,9 @@ verse = b.verse_gen()
 day=4
 day_af = 4
 app = Flask(__name__)
-
+@app.route("/")
+def Hello():
+  return "hello, world"
 @app.route('/incoming', methods=['POST'])
 def bot():
   incoming_msg = request.values.get('Body', '').lower()
@@ -33,4 +35,4 @@ def bot():
 
 
 if __name__ == "__main__":
-  app.run()
+  app.run(debug=True)
