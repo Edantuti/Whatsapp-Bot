@@ -5,11 +5,6 @@ from checkTime import checkTime
 from twilio.twiml.messaging_response import MessagingResponse
 from keep_alive import keep_alive
 from twilio.rest import Client
-from pyngrok import ngrok
-
-print(ngrok.connect(port=5000))
-
-
 
 b = Bible()
 
